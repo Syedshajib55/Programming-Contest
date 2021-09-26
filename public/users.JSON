@@ -7,6 +7,7 @@
     "first": "Caitlin",
     "last": "Lopez"
   },
+  "fee": "50",
   "location": {
     "city": "Leicester",
     "state": "Grampian",
@@ -23,6 +24,7 @@
 {
   "gender": "female",
   "role": "guider",
+  "fee": "50",
   "name": {
     "title": "Mrs",
     "first": "Caitlin",
@@ -43,6 +45,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -64,6 +67,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -85,6 +89,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -106,6 +111,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -127,6 +133,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -148,6 +155,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",
@@ -169,6 +177,7 @@
 },
 {
   "gender": "female",
+  "fee": "50",
   "role": "guider",
   "name": {
     "title": "Mrs",

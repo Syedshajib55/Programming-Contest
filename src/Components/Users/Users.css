@@ -1,0 +1,16 @@
+.body-part{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 15px;
+}
+.cart{
+    /* border: 2px solid red; */
+    height: 500px;
+}
+.users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 20px;
+
+}

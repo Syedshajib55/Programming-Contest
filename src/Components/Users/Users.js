@@ -1,27 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import User from '../User/User';
+import './Users.css'
 
 const Users = () => {
+
     const[users, setusers] = useState([]);
     const [cart, setCart] = useState([]);
+
     useEffect(()=>{
         fetch('./users.json')
         .then(res => res.json())
         .then(data => setusers(data))
     },[])
+
     const handleRegistrationDone = (user) => {
+
         const existId = cart.find(addedId => addedId.id === user.id);
-        if (existId) {
-            alert("This Participant has alreasdy registered.");
-        }
-        else {
+        if (!existId) {
             const newCart = [...cart, user];
             setCart(newCart)
         }
+        else {
+             alert("This Participant has alreasdy registered.");
+        }
     }
-    return (<div>
-            <div className='reg'>
+
+    return (<div className='body-part'>
+            <div className='users'>
             {
                 users.map(user => <User user={user} 
                 key = {user.id}
@@ -30,7 +36,7 @@ const Users = () => {
             }
             </div>
             <div className='cart'>
-                <Cart> cart={cart}</Cart>
+                <Cart cart={cart}></Cart>
             </div>
     </div>
     );
