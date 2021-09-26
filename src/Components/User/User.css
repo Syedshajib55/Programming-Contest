@@ -1,9 +1,16 @@
 .developer-btn{
     background-color: black;
     color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
 }
 .cards{
     background-color:indianred;
     color: white;
     padding: 10px;
+}
+.img{
+    height: 200px;
+    width: 200px;
 }

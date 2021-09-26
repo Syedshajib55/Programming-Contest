@@ -4,14 +4,15 @@ const Cart = (props) => {
     
     const {cart} = props;
     let totalFee = 0;
+    // Calculating total fee
     for(const price of cart){
         totalFee += parseInt(price.fee);
     }
     return (
         <div className="cart">
             <div className="cart-length">
-                <h3>Total Registrants : {props.cart.length}</h3>
-                <h3>Total Fee Earned: {totalFee}$</h3>
+                <h3 className='p-5'>Total Registrants : {props.cart.length}</h3>
+                <h3 className='p-5'>Total Earned Fee : {totalFee}$</h3>
             </div>
         </div>
     );

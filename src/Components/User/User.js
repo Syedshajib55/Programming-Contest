@@ -13,9 +13,11 @@ const User = (props) => {
                 <div className='row row-cols-1 p-2'>
                     {/* Single Cart  */}
                 <div className="cards h-100">
+                        {/* Contestant Image part */}
                         <div className="developer-img p-2">
                             <img className="img" src={picture.large} alt="..."/>
                         </div>
+                        {/* Single Contestant Details  */}
                         <div>
                             <h5>{name.first} {name.last}</h5>
                             <p>Gender : {gender}</p>

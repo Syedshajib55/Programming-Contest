@@ -4,25 +4,26 @@ import User from '../User/User';
 import './Users.css'
 
 const Users = () => {
-
+    // Using State for all contestant and total fee cart
     const[users, setusers] = useState([]);
     const [cart, setCart] = useState([]);
 
+    //Load Data
     useEffect(()=>{
         fetch('./users.json')
         .then(res => res.json())
         .then(data => setusers(data))
     },[])
 
+    //handle clickHandler
     const handleRegistrationDone = (user) => {
-
         const existId = cart.find(addedId => addedId.id === user.id);
         if (!existId) {
             const newCart = [...cart, user];
             setCart(newCart)
         }
         else {
-             alert("This Participant has alreasdy registered.");
+             alert("This Participant has already registered.");
         }
     }
 
